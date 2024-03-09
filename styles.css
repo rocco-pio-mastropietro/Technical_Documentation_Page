@@ -1,0 +1,170 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Documentation</title>
+  </head>
+  <body>
+    <main id="main-doc">      
+      <div id="div-nav">
+        <nav id="navbar">
+          <header>HTML documentation</header>
+          <div><a class="nav-link" href="#Introduction">Introduction</a></div>
+          <div><a class="nav-link" href="#HTML_elements">HTML elements</a></div>
+          <div><a class="nav-link" href="#Global_attributes">Global attributes</a></div>
+          <div><a class="nav-link" href="#Attributes">Attributes</a></div>
+          <div><a class="nav-link" href="#Reference">Reference</a></div>
+        </nav>
+      </div>
+      <div id="div-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+            <i>"My cat is very grumpy".</i>
+            <br>
+        <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (&lt;p&gt;) element:</p>
+            <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+        </p>
+        </section>
+        <section class="main-section" id="HTML_elements">
+          <header>HTML elements</header>
+          <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+        <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+        <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as:</p>
+            <code>&lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;search&gt;, &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;.</code>
+        <p>An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". The name of an element inside a tag is case-insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the &lt;title&gt; tag can be written as &lt;Title&gt;, &lt;TITLE&gt;, or in any other way. However, the convention and recommended practice is to write tags in lowercase.</p>
+        </section>
+        <section class="main-section" id="Global_attributes">
+          <header>Global attributes</header>
+          <p>Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements.</p>
+        <p>Global attributes may be specified on all HTML elements, even those not specified in the standard. That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant. For example, HTML5-compliant browsers hide content marked as <code>&lt;foo hidden&gt;…&lt;/foo&gt;</code>, even though <code>&lt;foo&gt;</code> is not a valid HTML element.</p>
+        <p>In addition to the basic HTML global attributes, the following global attributes also exist:</p>
+        <ul>
+          <li><code>xml:lang</code> and <code>xml:base</code> — these are inherited from the XHTML specifications and deprecated, but kept for compatibility purposes.</li>
+        <br>
+          <li>The ARIA <code>role</code> attribute and the multiple <code>aria-*</code> states and properties, used for ensuring accessibility.</li>
+        <br>
+          <li>The event handler attributes: <code>onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting.</code></li>
+        </ul>
+        </section>
+        <section class="main-section" id="Attributes">
+          <header>Attributes</header>
+          <p>Attributes contain extra information about the element that won't appear in the content. In this example, the <code><b>class</b></code> attribute is an identifying name used to target the element with style information.</p>
+        An attribute should have:
+        <ul>
+          <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+          <br>
+          <li>The attribute name, followed by an equal sign.</li>
+          <br>
+          <li>An attribute value, wrapped with opening and closing quote marks.</li>
+        </ul>
+        <br>
+        <h2>Active learning: Adding attributes to an element</h2>
+        <p>Another example of an element is <code>&lt;a&gt;</code>. This stands for anchor. An anchor can make the text it encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
+        <br>
+        <h3>href</h3>
+        <p>This attribute's value specifies the web address for the link. For example: <code>href="https://www.mozilla.org/".</code></p>
+        <br>
+        <h3>title</h3>
+        <p>The <code>title</code> attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, <code>title="The Mozilla homepage".</code> This appears as a tooltip when a cursor hovers over the element.</p>
+        <br>
+        <h3>target</h3>
+        <p>The <code>target</code> attribute specifies the browsing context used to display the link. For example, <code>target="_blank"</code> will display the link in a new tab. If you want to display the linked content in the current tab, just omit this attribute.</p>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <p>All the documentation in this page is taken from <a id="Reference_link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN</a>.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: rgb(90, 90, 90);
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 15vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+header {
+  font-family: "Georgia", serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: rgb(60, 60, 60);
+  background-color: rgb(240, 240, 240);
+}
+
+h2, h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+code {
+  line-height: 8vh;
+  color: black;
+  background-color: white;
+  border-style: inset;
+  padding: 0.5vh 0.5vw;
+}
+
+#div-nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: auto%;
+  position: fixed;
+  top: 73px;
+}
+
+nav header {
+  font-family: "Papyrus", monospace;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+nav div {
+   border-bottom: 1px solid gray;
+   height: 55px;
+   text-align: center;
+   line-height: 55px;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+#div-doc {
+  margin-left: 250px;
+  min-width: 380px;
+}
+
+section {
+  padding-top: 4em;
+}
+
+@media screen and (max-width: 480px) {
+  #div-nav {
+    display: none;
+  }
+  #div-doc {
+    margin: auto;
+  }
+}
+
+** end of undefined **
+
