@@ -1,4 +1,4 @@
 # Technical Documentation Page
 
-This i one of the required projects to earn my Responsive Web Design certification by freeCodeCamp.
-For this project, I built a technical documentation page to serve as instruction or reference for a topic.
+This is the boilerplate for the Documentation Page project. Instructions for building your project can be found at 
+https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page
